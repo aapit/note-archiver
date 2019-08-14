@@ -3,7 +3,8 @@
 # @author David Spreekmeester <@aapit>
 
 # Read config _________________________________________________________________
-. archiver.config
+config_dir=$(dirname "${BASH_SOURCE[0]}")
+. ${config_dir}/archiver.config
 
 # Print output ________________________________________________________________
 pr() {
